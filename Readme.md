@@ -1,4 +1,35 @@
-# VPC and Auto Scaling Group Setup Guide
+# Scalable Web App Deployment Using AWS VPC, ASG & ALB
+
+### Deployed a scalable web application on AWS using VPC, Auto Scaling Group, and Application Load Balancer
+- Designed a custom VPC with public/private subnets across two Availability Zones for high availability
+- Configured EC2 instances with Launch Template and Auto Scaling Group in private subnets for scalability
+- Used Application Load Balancer to distribute traffic, and NAT Gateways for outbound internet access
+- Secured infrastructure with Security Groups and accessed private instances via Bastion Host 
+
+**Tools & Services:**
+- AWS EC2,
+- VPC,
+- ALB,
+- Auto Scaling Group,
+- NAT Gateway,
+- Security Groups,
+- Bastion Host, Ubuntu
+
+**Description:**
+Built and deployed a highly available, fault-tolerant web application on AWS using core infrastructure services. Designed a custom VPC spanning two AZs with public and private subnets. Configured Auto Scaling Group to ensure elasticity and Application Load Balancer for traffic distribution.
+
+**Key Responsibilities:**
+- Created custom VPC with 2 public and 2 private subnets across different AZs
+- Configured a Launch Template and Auto Scaling Group with t2.micro Ubuntu EC2 instances
+- Set up NAT Gateways for internet access to private instances
+- Deployed Application Load Balancer across public subnets to route traffic on port 80/8000
+- Used Bastion Host in the public subnet to securely SSH into private EC2 instances
+- Deployed static web pages via Python HTTP server to simulate web app behavior
+
+**Outcome:**
+Achieved a scalable and secure architecture where traffic is load-balanced across multiple instances, with high availability and minimal exposure to public access.**
+
+# Steps to Create Project
 
 ## 1. Select VPC and more And resources 
 
